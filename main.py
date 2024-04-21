@@ -9,7 +9,7 @@ import datetime
 from botocore.client import ClientError
 
 
-def handler(event, context):
+def lambda_handler(event, context):
     # get req body data
     print("Req Body -", event["body"]) # Print Request Body
     reqBody = json.loads(event["body"])
